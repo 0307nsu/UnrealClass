@@ -1,0 +1,2 @@
+#include "BagSlot.h"
+
