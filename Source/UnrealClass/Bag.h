@@ -25,6 +25,12 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	TSet<FString> Title;
 	
+	UPROPERTY(EditAnywhere, Category = "ItemData")
+	TObjectPtr<UDataTable> ItemDataTable;
+	
+	UFUNCTION()
+	void AddRandomItem();
+	
 	UFUNCTION()
 	void AddItem(int32 id);
 	
@@ -39,6 +45,9 @@ public:
 	
 	UFUNCTION()
 	void ShowBag();
+	
+	UFUNCTION()
+	void Test();
 
 protected:
 	virtual void BeginPlay() override;
